@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(fonts/Gilroy-Bold.ttf);
+
+  font-family: "Gilroy-Medium";
+  src: url(fonts/Gilroy-Medium.ttf);
+
+  font-family: "Gilroy-Regular";
+  src: url(fonts/Gilroy-Regular.ttf);
+}
+
+:root {
+  --cor0: rgba(255, 255, 255, 90%);
+  --cor1: #534473;
+  --cor2: #302546;
+  --cor3: #201B2C;
+  --cor4: #77FFC0;
+  --cor5: #03F284;
+  --cor6: rgba(255, 255, 255, 0);
+  --font-spacing: -0.9px;
+  --placehoder: rgba(255, 255, 255, 70%);
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 60px;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--cor3);
+  color: var(--cor0);
+}
+
+h1 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: var(--cor4);
+  font-size: 30pt;
+  letter-spacing: var(--font-spacing);
+}
+
+h2 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: var(--font-spacing);
+  color: var(--cor4);
+}
+
+label {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 16pt;
+}
+
+input {
+  font-size: 12pt;
+}
+
+.container {
+  background-color: var(--cor2);
+  width: 66rem;
+  height: 46.25rem;
+  margin-top: 43px;
+  padding: 39px;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* ESTILOS DOS CAMPOS DE PREENCHIMENTO NOME E BAIRRO */
+
+.boxNome input, 
+.boxBairro input {
+  width: 38.68rem;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin: 5px 18px 0px 0px;
+  color: var(--var0);
+}
+
+/* ESTILO DO CAMPO DE SELEÇÃO DO SEXO */
+
+.boxSexo{
+  width: 38.68rem;
+}
+
+.op {
+  color: var(--cor0);
+}
+
+#sexo {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  width: 100%;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+  color: var(--placehoder);
+}
+
+/* ESTILO DO CAMPO DE PREENCHIMENTO CIDADE */
+
+.boxCidade {
+  width: 38.68rem;
+}
+
+.boxCidade input {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  width: 100%;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: var(--cor0);
+}
+
+/* ESTILO DO CAMPO DE PREENCHIMENTO NUMERO E CPF*/
+
+.boxNumero input,
+.boxCPF input {
+  width: 29.93rem;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin: 5px 18px 0px 0px;
+  color: var(--var0);
+}
+
+/* ESTILOS DO CAMPO DE PREENCHIMENTO DE NIVEL E INSTRUMENTO */
+
+.box-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.box-3 {
+  width: 38.68rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.ck-item {
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+
+
+.boxNivel{
+  max-width: 38.68rem;
+}
+
+#nivel {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  width: 100%;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+  color: var(--placehoder)
+}
+
+/* ESTILOS DO CAMPO DE PREENCHIMENTO DE OBJETIVO E SE POSSUI INSTRUMENTO*/
+
+#instrumento {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  width: 100%;
+  height: 2.18rem;
+  background-color: var(--cor1);
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+  color: var(--placehoder);
+}
+
+.box-4 {
+  width: 21.40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* ESTILO DO CAMPO DE INFLUENCIAS MUSICAIS*/
+
+.influencias-musicais {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#influencias-musicais {
+  color: var(--cor0);
+  margin-top: 5px;
+  border: none;
+  background-color: var(--cor1);
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+/* ESTILO DO BOTÃO*/
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+#button button {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: -1%;
+  color: var(--cor2);
+  margin: 1.62rem;
+  width: 220px;
+  height: 45px;
+  border-radius: 5px;
+  border:none;
+  background-color: var(--cor5);
+}
+
+#button button:hover,
+#button button:focus{
+  color: var(--cor5);
+  border: 1px solid var(--cor5);
+  background-color:var(--cor6);
+  -webkit-animation: crescer 0.8s ease-in-out;
+  -moz-animation: crescer 0.8s ease-in-out;
+  -o-animation: crescer 0.8s ease-in-out;
+  animation: crescer 0.8s ease-in-out;
+}
+
+@keyframes crescer {
+  0% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ESTILO DOS PLACEHOLDERS DE TODOS OS CAMPOS DE INFORMAÇÃO*/
+
+.boxNome input::placeholder, 
+.boxBairro input::placeholder, 
+.boxCidade input::placeholder,
+.boxNumero input::placeholder,
+.boxCPF input::placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  color: var(--placehoder);
+  padding-left: 16px;
+}

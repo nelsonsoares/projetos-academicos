@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Music School</title>
+</head>
+<body>
+      <h1>Cadastro de Aluno</h1>
+      <h2>Escola de Música</h2>
+
+    <div class="container">
+
+      <div class="box">
+        <div class="boxNome">
+          <label for="nome">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        </div>
+        <div class="boxSexo">
+          <label for="sexo">Sexo</label>
+          <select name="sexo" id="sexo">
+            <option selected disabled value="">Selecione</option>
+            <option value="masculino" class="op">Masculino</option>
+            <option value="feminino" class="op">Feminino</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="boxBairro">
+          <label for="">Bairro</label>
+          <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
+        </div>
+        <div class="boxCidade">
+          <label for="">Cidade</label>
+          <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="boxNumero">
+          <label for="">Numero</label>
+          <input type="text" name="numero" id="numero" placeholder="Número da sua residência">
+        </div>
+        <div class="boxCPF">
+          <label for="">CPF</label>
+          <input type="text" name="cpf" id="cpf" placeholder="Número do seu CPF">
+        </div>
+      </div>
+
+      <div class="box-2">
+        <div class="checkInstrumento">
+          <label for="instrumento">Qual instrumento deseja aprender?</label>
+          <div class="box-3">
+            <input type="radio" name="violao">
+            <label for="violao" class="ck-item">Violão</label>
+            <input type="radio" name="teclado">
+            <label for="teclado" class="ck-item">Teclado</label>
+            <input type="radio" name="bateria">
+            <label for="bateria" class="ck-item">Bateria</label>
+            <input type="radio" name="saxofone">
+            <label for="saxofone" class="ck-item">Saxofone</label>
+            <input type="radio" name="violino">
+            <label for="violino" class="ck-item">Violino</label>
+            <input type="radio" name="flauta">
+            <label for="flauta" class="ck-item">Flauta</label>
+         </div>
+        </div>
+        <div class="boxNivel">
+          <label for="nivel">Qual seu nível atual?</label>
+          <select name="nivel" id="nivel">
+            <option selected disabled value="">Selecione</option>
+            <option value="iniciante" class="op">Iniciante</option>
+            <option value="intermediario"class="op">Intermediário</option>
+            <option value="avancado"class="op">Avançado</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <div class="checkObjetivo">
+          <label for="objetivo">Qual seu principal objetivo?</label>
+          <div class="box-3">
+            <input type="checkbox" name="aprendizado" id="aprendizado">
+            <label for="aprendizado" class="ck-item">Aprendizado</label>
+            <input type="checkbox" name="aperfeicoamento" id="aperfeicoamento">
+            <label for="aperfeicoamento" class="ck-item">Aperfeiçoamento</label>
+            <input type="checkbox" name="reciclagem" id="reciclagem">
+            <label for="reciclagem" class="ck-item">Reciclagem</label>
+            <input type="checkbox" name="todos" id="todos">
+            <label for="todos" class="ck-item">Todos</label>
+          </div>
+        </div>
+        <div class="boxInstrumento">
+          <div class="box-4">
+            <label for="instrumento">Possui instrumento?</label>
+            <select name="instrumento" id="instrumento">
+              <option selected disabled value="">Selecione</option>
+              <option value="sim" class="op">Sim</option>
+              <option value="nao" class="">Não</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="influencias-musicais">
+        <label for="influencias-musicais">Quais suas principais influências musicais?</label>
+        <textarea name="inluencias-musicais" id="influencias-musicais" cols="30" rows="10"></textarea>
+      </div>
+
+      <div id="button">
+        <button class="button">Finalizar</button>
+      </div>
+
+    </div>
+
+</body>
+</html>
