@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 41rem;
+  min-width: 21.5rem;
   height: 100%;
   padding: 45px;
   border: 1px solid var(--w80);
@@ -151,7 +151,79 @@ body {
 /* Sidebar Right */
 
 .sidebar-r {
-  padding: 57px;
   display: flex;
   flex-direction: column;
+  margin-left: 57px;
+}
+
+.perfil h1 {
+  font-size: 2.3em;
+  margin-left: 2rem;
+  font-family: var(--font-bold);
+  font-weight: normal;
+  color: var(--text-color);
+  padding-bottom: 1rem;  
+}
+
+.perfil p {
+  font-family: var(--font-medium);
+  padding-top: 1.5rem;
+  line-height: 22px;
+  border-top: 1px solid var(--w80);
+}
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.experiencia h1 {
+  font-size: 2.3em;
+  margin-left: 2rem;
+  font-family: var(--font-bold);
+  font-weight: normal;
+  color: var(--text-color);
+  padding: 1rem 0;  
+}
+
+#exp {
+  border-top: 1px solid var(--w80);
+}
+
+.exp {
+  display: flex;
+  padding-top: 2rem;
+  font-family: var(--font-bold);
+}
+
+.company {
+  width: 70rem;
+  padding: 0px 48px 0px 48px;
+  color: var(--text-color);
+}
+
+
+.expItem h2 {
+  color: var(--text-color);
+}
+
+.expItem p {
+  margin-top: 10px;
+  font-family: var(--font-medium);
+  font-weight: normal;
+  line-height: 22px;
+}
+/* Estilo do Footer */
+
+.footer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ column-gap: 5px;
+}
+
+.footer a img {
+  width: 27px;
 }
