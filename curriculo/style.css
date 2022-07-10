@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-width: 21.5rem;
+  min-width: 22.2rem;
   height: 100%;
   padding: 45px;
   border: 1px solid var(--w80);
@@ -199,7 +199,8 @@ body {
 }
 
 .company {
-  width: 70rem;
+  max-width: 75rem;
+  min-width: 17.5rem;
   padding: 0px 48px 0px 48px;
   color: var(--text-color);
 }
@@ -220,10 +221,11 @@ body {
 .footer {
  display: flex;
  justify-content: center;
- align-items: center;
+ align-items: flex-end;
  column-gap: 10px;
 }
 
 .footer a img {
+  margin-top: 10px;
   width: 27px;
 }
