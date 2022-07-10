@@ -41,7 +41,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   min-width: 22.2rem;
-  height: 100%;
+  height: 800px;
   padding: 45px;
   border: 1px solid var(--w80);
   border-radius: 5px;
